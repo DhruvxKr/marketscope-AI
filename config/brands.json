@@ -1,0 +1,12 @@
+{
+  "Coffee Chain": {
+    "population": 0.20,
+    "competition": -0.10,
+    "student_population": 0.25
+  },
+  "Luxury Retail": {
+    "income": 0.35,
+    "tourism": 0.20,
+    "rent": -0.05
+  }
+}

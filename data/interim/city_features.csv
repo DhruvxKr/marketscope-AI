@@ -1,0 +1,23 @@
+city,state,latitude,longitude,population,is_state_capital,cafes,universities,malls,hotels,airports
+Ahmedabad,Gujarat,23.0219,72.5797,8009000,False,45,11,16,48,1
+Bhopal,Madhya Pradesh,23.25,77.4167,1798218,True,33,9,12,48,1
+Chandigarh,Chandigarh,30.7364,76.7883,1055450,True,21,7,15,72,2
+Chennai,Tamil Nadu,13.0825,80.275,12395000,True,210,9,21,228,2
+Coimbatore,Tamil Nadu,11.0008,76.9633,2136916,False,59,11,6,52,1
+Delhi,Delhi,28.66,77.23,32226000,True,436,34,75,396,4
+Hyderabad,Telangana,17.3617,78.4747,10494000,True,293,225,118,231,6
+Indore,Madhya Pradesh,22.7186,75.855,1994397,False,64,27,14,42,1
+Jaipur,Rajasthan,26.915,75.82,3073350,True,105,8,24,181,1
+Kanpur,Uttar Pradesh,26.4725,80.3311,4581268,False,25,6,6,18,3
+Kochi,Kerala,9.9667,76.2833,677381,False,304,13,29,412,1
+Kolkata,West Bengal,22.5675,88.37,21747000,True,121,40,40,122,2
+Lucknow,Uttar Pradesh,26.847,80.947,3382000,True,31,15,20,64,2
+Mumbai,Maharashtra,19.0758,72.8775,24973000,True,384,28,58,257,2
+Nagpur,Maharashtra,21.1497,79.0806,2405665,False,27,11,13,25,1
+Patna,Bihar,25.61,85.1414,2046652,True,38,6,23,45,1
+Pune,Maharashtra,18.5211,73.8553,8231000,False,376,61,68,162,4
+Raipur,Chhattisgarh,21.2379,81.6337,1010087,True,10,8,12,8,1
+Ranchi,Jharkhand,23.3556,85.3347,1073440,True,12,11,18,33,1
+Surat,Gujarat,21.205,72.84,6538000,False,14,3,11,6,1
+Thiruvananthapuram,Kerala,8.4875,76.9525,743691,True,150,13,21,250,1
+Vadodara,Gujarat,22.3,73.2,3500000,False,18,6,6,10,1

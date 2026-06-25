@@ -1,0 +1,9 @@
+{
+  "population": 0.25,
+  "income": 0.20,
+  "competition": -0.15,
+  "rent": -0.15,
+  "tourism": 0.10,
+  "connectivity": 0.15,
+  "student_population": 0.10
+}

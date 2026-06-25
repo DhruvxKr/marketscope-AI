@@ -1,0 +1,23 @@
+city,state,latitude,longitude,population,is_state_capital
+Ahmedabad,Gujarat,23.0219,72.5797,8009000,False
+Bhopal,Madhya Pradesh,23.25,77.4167,1798218,True
+Chandigarh,Chandigarh,30.7364,76.7883,1055450,True
+Chennai,Tamil Nadu,13.0825,80.275,12395000,True
+Coimbatore,Tamil Nadu,11.0008,76.9633,2136916,False
+Delhi,Delhi,28.66,77.23,32226000,True
+Hyderabad,Telangana,17.3617,78.4747,10494000,True
+Indore,Madhya Pradesh,22.7186,75.855,1994397,False
+Jaipur,Rajasthan,26.915,75.82,3073350,True
+Kanpur,Uttar Pradesh,26.4725,80.3311,4581268,False
+Kochi,Kerala,9.9667,76.2833,677381,False
+Kolkata,West Bengal,22.5675,88.37,21747000,True
+Lucknow,Uttar Pradesh,26.847,80.947,3382000,True
+Mumbai,Maharashtra,19.0758,72.8775,24973000,True
+Nagpur,Maharashtra,21.1497,79.0806,2405665,False
+Patna,Bihar,25.61,85.1414,2046652,True
+Pune,Maharashtra,18.5211,73.8553,8231000,False
+Raipur,Chhattisgarh,21.2379,81.6337,1010087,True
+Ranchi,Jharkhand,23.3556,85.3347,1073440,True
+Surat,Gujarat,21.205,72.84,6538000,False
+Thiruvananthapuram,Kerala,8.4875,76.9525,743691,True
+Vadodara,Gujarat,22.3,73.2,3500000,False
