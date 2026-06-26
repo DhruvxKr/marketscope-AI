@@ -1,9 +1,17 @@
 import DashboardLayout from "../components/DashboardLayout";
+import KPICards from "../components/KPICards";
+import { useMarkets } from "../hooks/useMarkets";
 
 function Dashboard() {
+  const { markets, loading, error } = useMarkets();
+
+  if (loading) return <p>Loading...</p>;
+
+  if (error) return <p>Error loading markets.</p>;
+
   return (
     <DashboardLayout>
-      <h1>Hello Dashboard</h1>
+      <KPICards markets={markets} />
     </DashboardLayout>
   );
 }
