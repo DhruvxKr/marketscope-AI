@@ -21,22 +21,26 @@ interface Props {
     >;
 
     onRunSimulation: () => void;
+    onManualChange: () => void;
 }
 
 function ScenarioSimulator({
   weights,
   setWeights,
   onRunSimulation,
+  onManualChange,
 }: Props) {
-  function handleChange(
+function    handleChange(
     key: keyof ScoreWeights,
     value: number
-  ) {
+) {
+    onManualChange();
+
     setWeights({
-      ...weights,
-      [key]: value,
+        ...weights,
+        [key]: value,
     });
-  }
+}
   const totalWeight = Object.values(weights).reduce(
   (sum, value) => sum + value,
   0

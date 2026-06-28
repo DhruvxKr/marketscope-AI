@@ -5,10 +5,11 @@ import DashboardLayout from "../components/DashboardLayout";
 import KPICards from "../components/KPICards";
 import MarketTable from "../components/MarketTable";
 import ScenarioSimulator from "../components/ScenarioSimulator";
-
+import BusinessSelector from "../components/BusinessSelector";
 import { useMarkets } from "../hooks/useMarkets";
 
 import type { ScoreWeights } from "../types/weights";
+import type { BusinessPreset } from "../types/business";
 
 function Dashboard() {
   const {
@@ -17,6 +18,8 @@ function Dashboard() {
     error,
   } = useMarkets();
 
+
+  
   const [markets, setMarkets] = useState(initialMarkets);
 
   useEffect(() => {
@@ -30,6 +33,31 @@ function Dashboard() {
     mall_density: 0.15,
     hotel_density: 0.10,
   });
+
+  const [selectedBusiness, setSelectedBusiness] =
+  useState("custom");
+
+const handleBusinessSelect = async (
+  preset: BusinessPreset
+) => {
+  setSelectedBusiness(preset.id);
+  setWeights(preset.weights);
+
+  try {
+    const updatedMarkets = await runSimulation(
+      preset.weights
+    );
+
+    setMarkets(updatedMarkets);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+const handleManualChange = () => {
+    setSelectedBusiness("custom");
+};
+
 
   const handleRunSimulation = async () => {
     try {
@@ -66,11 +94,21 @@ function Dashboard() {
           <MarketTable markets={markets} />
         </div>
 
-        <ScenarioSimulator
-          weights={weights}
-          setWeights={setWeights}
-          onRunSimulation={handleRunSimulation}
-        />
+        <div className="space-y-6">
+
+<BusinessSelector
+    selectedBusiness={selectedBusiness}
+    onSelectBusiness={handleBusinessSelect}
+/>
+
+    <ScenarioSimulator
+    weights={weights}
+    setWeights={setWeights}
+    onRunSimulation={handleRunSimulation}
+    onManualChange={handleManualChange}
+/>
+
+</div>
       </div>
     </DashboardLayout>
   );
