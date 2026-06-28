@@ -1,6 +1,8 @@
 from fastapi import APIRouter
 from typing import List
 from backend.models.schemas import Market
+from backend.services.simulation_service import simulate
+from backend.models.schemas import ScoreWeights
 
 from backend.services.market_service import (
     get_all_markets,
@@ -12,6 +14,9 @@ from backend.services.scoring_service import calculate_scores
 
 router = APIRouter()
 
+@router.post("/simulate")
+def simulate_market(weights: ScoreWeights):
+    return simulate(weights)
 
 @router.get("/markets", response_model=List[Market])
 def markets():
